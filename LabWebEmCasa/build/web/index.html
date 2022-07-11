@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">                     
+        <link rel="stylesheet" href="styles/menustyle.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <title>CONTROLE LABORATORIO SENAI</title>      
+    </head>
+            
+    <style>
+    .main iframe {
+        border: none;
+        position: absolute;
+        margin-top: 12px;
+        width:  100%;
+        height: 85%;
+    }
+    #centro {
+        width:100px;
+        height:100px;
+    }
+    
+    </style>
+    <body>
+        <!-- ESTRUTURA DO MENU -->
+        <!-- CADASTROS -->
+        <div class="topnav" id="myTopnav">
+            <div class="dropdown">
+                    <button class="dropbtn">Cadastrar</button>
+                <div class="dropdown-content">
+                    <a href="cadastratecnico.jsp" target="janela_prog">Técnico</a>
+                    <a href="cadastrasoftware.jsp" target="janela_prog">Software</a>
+                    <a href="cadastralaboratorio.jsp" target="janela_prog">Laboratório</a>
+                    <a href="cadastramanutencao.jsp" target="janela_prog">Manutenção</a>
+                </div>
+            </div>
+            
+            <!-- CONSULTAS -->
+            <div class="dropdown">
+                <button class="dropbtn"> Consultar <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="consultatecnico.jsp" target="janela_prog">Técnico</a>  
+                    <a href="consultasoftware.jsp" target="janela_prog">Software</a> 
+                    <a href="consultalaboratorio.jsp" target="janela_prog">Laboratório</a> 
+                    <a href="consultamanutencao.jsp" target="janela_prog">Manutenção</a> 
+
+                </div>
+            </div>   
+            
+            <!-- LOGIN E LOGOUT -->
+            <div class="autenticacao">
+                <a href="login.jsp" target="janela_prog" ><i class='fas fa-power-off' style='font-size:19px;color:greenyellow'></i>&nbsp; Entrada</a>
+                <a href="logout.jsp" target="janela_prog"><i class='fas fa-power-off' style='font-size:19px;color:red'>        </i>&nbsp; Sa&iacute;da</a>
+            </div>                    		                                   
+        </div>
+        
+        <!-- IFRAME ONDE ABREM AS TELAS DO SISTEMA -->
+        <div class="main">
+            <iframe name="janela_prog" element.mozRequestFullScreen()></iframe>
+        </div> 
+    </body>	
+</html>
